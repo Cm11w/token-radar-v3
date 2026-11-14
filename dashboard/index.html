@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token Radar — peer-benchmark launch board</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="radar-dot" aria-hidden="true"></span>
+    <div>
+      <h1>Token Radar</h1>
+      <p class="tagline">Pre-token protocols, priced against their own category's traded peers.</p>
+    </div>
+  </div>
+  <nav class="nav" aria-label="Views">
+    <a href="#/" data-nav="board">Board</a>
+    <a href="#/peers" data-nav="peers">Peer benchmarks</a>
+    <a href="#/live" data-nav="live">Live tokens</a>
+    <a href="#/method" data-nav="method">Method</a>
+  </nav>
+</header>
+<main id="view"></main>
+<footer class="foot">
+  <p>Implied values are this radar's own claim from a frozen snapshot, never a prediction that a token
+  will be issued. A protocol is said to record no token, never to have none: the record may miss one.</p>
+</footer>
+<script src="../data.js"></script>
+<script src="benchmarks.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
